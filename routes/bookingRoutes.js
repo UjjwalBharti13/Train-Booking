@@ -8,12 +8,12 @@ const { createBooking } = require('../controller/bookingController');
 
 
 
-console.log({
-  authMiddleware: typeof authMiddleware,
-  bookingValidation: typeof bookingValidation,
-  seatAvailabilityMiddleware: typeof seatAvailabilityMiddleware,
-  createBooking: typeof createBooking,
-});
+// console.log({
+//   authMiddleware: typeof authMiddleware,
+//   bookingValidation: typeof bookingValidation,
+//   seatAvailabilityMiddleware: typeof seatAvailabilityMiddleware,
+//   createBooking: typeof createBooking,
+// });
 router.post(
      '/book',
      authMiddleware,

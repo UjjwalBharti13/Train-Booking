@@ -18,4 +18,6 @@ const roleMiddleware = (requiredRole) => {
      }
 }
 
-module.exports = roleMiddleware;
+module.exports = {
+      roleMiddleware
+}

@@ -6,11 +6,11 @@ const { authMiddleware }  = require('../middleWare/authmiddleware');
 
 
 
-console.log({
-  login: typeof login,
-  register: typeof register,
-  authMiddleware: typeof authMiddleware
-});
+// console.log({
+//   loginUser: typeof loginUser,
+//   registerUser: typeof registerUser,
+//   authMiddleware: typeof authMiddleware
+// });
 // Register Route
   
 router.post('/register', registerUser);
