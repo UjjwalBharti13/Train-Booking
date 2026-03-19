@@ -58,6 +58,25 @@ const createBooking = async (req, res) => {
                  success : false,
             });
     };
+      
+    try {
+       const booking = await Booking.create({
+               user : userId,
+               train : trainId
+       });
+            return res.status(201).json({
+                message : "Booking created Successfully",
+                success : true,
+                 data : booking,
+            });   
+      
+    } catch (error) {
+           
+        return res.status(500).json({
+             message : "Internal Server Error",
+             success : false,
+        });
+    }
 };
     module.exports = {
          createBooking,
